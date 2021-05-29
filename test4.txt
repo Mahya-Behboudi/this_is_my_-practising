@@ -1,0 +1,15 @@
+def binary_search(mylist,target):
+    down = 0
+    up = len(mylist)
+    while True:
+        if down == up:
+            return -1
+        min_size = (down+up) // 2
+        index_min_size = mylist[min_size]
+        print("rol[{0}:{1}](size = {2}), probed='{3}',target ='{4}'".format(down,up,up-down,index_min_size,target))
+        if index_min_size == target:
+            return min_size
+        if index_min_size < target:
+            down = min_size +1 
+        else:
+            up = min_size
