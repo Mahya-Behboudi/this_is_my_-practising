@@ -1,0 +1,9 @@
+With the crude loop we have now where it just cycles as quickly as it can,
+ two factors determine the frame rate. The first is how much work it has to do each frame.
+  Complex physics, a bunch of game objects, and lots of graphic detail all will keep
+   your CPU and GPU busy, and it will take longer to complete a frame.
+
+The second is the speed of the underlying platform.
+ Faster chips churn through more code in the same amount of time.
+  Multiple cores, GPUs, dedicated audio hardware, and the OS’s scheduler
+   all affect how much you get done in one tick.
