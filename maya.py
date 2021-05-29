@@ -1,4 +1,4 @@
-# what is the shiffel work!
+# 
 import random
 from  chess_solution import has_clashes
 def main():
